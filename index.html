@@ -112,31 +112,75 @@
 
             <div role="group">
               <p class="form-title">Залиште свої дані, ми вам передзвонимо</p>
-              <form class="form">
-                <div class="form-field">
-                  <label class="form-label" for="name">Ім'я</label>
-                  <input class="form-input" type="text" name="user-name" id="name" />
-                </div>
 
-                <div class="form-field">
-                  <label class="form-label" for="tel">Телефон</label>
-                  <input class="form-input" type="tel" name="user-phone-number" id="tel" />
-                </div>
+              <!-- Заполняем имя -->
 
-                <div class="form-field">
-                  <label class="form-label" for="email">Пошта</label>
-                  <input class="form-input" type="email" name="mail" id="email" />
-                </div>
+              <form class="form" autocomplete="off">
+                <label class="form-field">
+                  <span class="form-label">Ім'я</span>
+                  <div class="test">
+                    <input class="form-input" type="text" name="user-name" />
+                    <span class="form-icon">
+                      <svg width="18" height="18">
+                        <use href="./images/symbol-defs.svg#icon-form-person"></use>
+                      </svg>
+                    </span>
+                  </div>
+                </label>
 
-                <div class="form-field">
-                  <label class="form-label" for="comment">Коментар</label>
+                <!-- Заполняем телефон -->
+
+                <label class="form-field">
+                  <span class="form-label">Телефон</span>
+                  <div class="test">
+                    <input class="form-input" type="tel" name="user-phone-number" />
+                    <span class="form-icon">
+                      <svg width="18" height="18">
+                        <use href="./images/symbol-defs.svg#icon-form-phone"></use>
+                      </svg>
+                    </span>
+                  </div>
+                </label>
+
+                <!-- Заполняем почту -->
+
+                <label class="form-field">
+                  <span class="form-label">Пошта</span>
+                  <div class="test">
+                    <input class="form-input" type="email" name="mail" />
+                    <span class="form-icon">
+                      <svg width="18" height="18">
+                        <use href="./images/symbol-defs.svg#icon-form-email"></use>
+                      </svg>
+                    </span>
+                  </div>
+                </label>
+
+                <!-- Заполняем коммент -->
+
+                <label class="form-field" for="comment">
+                  <span class="form-label">Коментар</span>
                   <textarea
+                    class="form-textarea"
                     name="comment"
                     id="comment"
                     rows="10"
                     placeholder="Введіть текст"
                   ></textarea>
-                </div>
+                </label>
+
+                <!-- Соглашаемся с  Условиями договора -->
+
+                <label class="check-field">
+                  <input class="input-checkbox" type="checkbox" />
+                  <span class="checkbox-icon"></span>
+                  <span class="policy"
+                    >Погоджуюся з розсилкою та приймаю
+                    <a class="accent" href="#">Умови договору</a>
+                  </span>
+                </label>
+
+                <!-- Отправка формы -->
 
                 <button type="submit" class="submit-button">Відправити</button>
               </form>
@@ -517,6 +561,19 @@
               </a>
             </li>
           </ul>
+        </div>
+
+        <div class="subscribe">
+          <p class="subscribe-title">Підпишіться на розсилку</p>
+          <label for="">
+            <input class="subscribe-input" type="email" name="" id="" placeholder="E-mail" />
+            <button class="subscribe-button" type="button">
+              Підписатися
+              <svg class="icon-send" width="24" height="24">
+                <use href="./images/symbol-defs.svg#icon-send"></use>
+              </svg>
+            </button>
+          </label>
         </div>
       </div>
     </footer>
