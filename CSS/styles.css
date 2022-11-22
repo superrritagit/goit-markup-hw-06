@@ -72,6 +72,13 @@
     background-size: contain;
 }
 
+.check-field:focus-within .checkbox-icon{
+    
+    border-color: #2196F3;
+}
+    
+
+
 .checkbox-icon{
     position: absolute;
     transform: translate(7px, 3px);
@@ -783,7 +790,8 @@ img{
 
     margin-left: 12px;
     padding: 0;
-
+   
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     background-color: #2196F3;
     color: var(--white-color);
     font-weight: 700;
@@ -796,13 +804,20 @@ img{
     cursor: pointer;
 }
 
+.subscribe-button:hover,
+.subscribe-button:focus{
+    background-color:#188CE8;
 
+}
 
-.icon-send{
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(-28px, 13px);
+.subscribe-label{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.subscribe-label > svg{
+    margin-left: 10px;
 }
 
 .footer-logo{
